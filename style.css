@@ -1,0 +1,30 @@
+body{
+    font-family: Arial;
+}
+
+h3{
+    width: 300px;
+    padding: 5px;
+    background:rgb(209, 206, 206);
+}
+
+a{
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+a:hover{
+    display: inline-block;
+    background-color: rgb(209, 206, 206);
+    color: orange;
+}
+
+a:active{
+    color: red;
+}
+
+a:visited{
+    color: green;
+}

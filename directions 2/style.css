@@ -1,0 +1,34 @@
+/* solving with nth-child() */
+
+section {
+  width: 500px;
+  border: 10px solid #4285f4;   /* blue border around all 4 boxes*/
+  font-family: 'Baloo Thambi 2', cursive; 
+  font-size: 50px; 
+  color: white;             /* text colour through inheritance */
+}
+
+p {
+  text-align: center; 
+  margin: 0px;              /* default margins override */
+}
+
+p:nth-child(1){
+  padding: 50px;                /* winning space around text */
+  background-color: #E67676;    /* red background colour */
+}
+
+p:nth-child(2){
+  padding: 50px; 
+  background-color: #F2F062;
+}
+
+p:nth-child(3){
+  padding: 50px; 
+  background-color: #A9E6E6;
+}
+
+p:nth-child(4){
+  padding: 50px; 
+  background-color: #7692E4;
+}

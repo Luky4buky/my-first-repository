@@ -1,0 +1,20 @@
+a{
+  display: block;
+  margin: 10px;
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+  color: green;
+}
+
+a:hover{
+  color: lime;
+  text-decoration: none;
+}
+
+a:active{
+  color: orange;
+}
+
+a:visited{
+  color: brown;
+}

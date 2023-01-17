@@ -1,0 +1,90 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  max-width: 600px; /* instead of 'width' -> makes pictures reshuffle in flexbox container on webpage when width is less than 600px */
+  /* 'max-width' property in CSS is used to define the maximum width of an element; the value of the width cannot be larger than the value of 'max-width'; if the content is larger than the 'max-width' then it will go to the next line and if the content is smaller than 'max-width' then it has no effect */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-holder{
+  display: flex; /* set in parent of 'card' divs */
+  justify-content: space-between; /* placed evenly on the main axis in a flexbox container */
+}
+
+.card{/* positioning done by flexbox - at parent level, i.e. '.card-holder' */
+  width: 180px;
+  background-color: #3cb878;
+  text-align: center; /* aligns text as well as pictures */
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 5px 2px grey; /* offset-x|offset-y| blur-radius|spread-radius|color */
+}
+
+.sign-up-form{
+  padding: 10px;
+  border: solid thin #cfcfcf;
+  border-radius: 5px;
+  color: grey;
+  position: relative;/*parent of 'close-button' => enables 'close-button' to be positioned absolutely - to the corner of the form*/
+  /* 'position: absolute' places an element relative to its parent's position and changing the layout around it */
+  /* 'position: relative' places an element relative to its current position without changing the layout around it */
+  margin-top: 30px; /* makes space between 'cards' and 'sign-up-form' */
+}
+
+.sign-up-form h3{
+  color: grey;
+}
+
+.sign-up-form input[type="text"]{
+  width: 100%;
+  height: 30px;
+  border: thin solid #cfcfcf;
+  border-radius: 3px;
+  box-sizing: border-box; /*makes it equal width to 'Subscribe' button*/
+  padding-left: 5px; /*some padding before cursor in input field*/
+}
+
+.sign-up-form button{
+  display: block;
+  width: 100%;
+  background-color: #3cb878;
+  color: white;
+  border: 0;
+  height: 30px;
+  cursor: pointer; /* hovering over changes cursor to pointer */
+  margin-top: 10px;
+}
+
+.sign-up-form input[type="checkbox"]{
+  position: relative; /*positioning checkbox in line with text*/
+  top: 2px; /* 'position: relative' places an element relative to its current position without changing the layout around it */
+}
+
+#question-marker{
+  background-color: #3cb878;
+  width: 100px;/*making green circle: width=height (square), border-radius: 50% (makes square become circle) */
+  height: 100px;
+  border-radius: 50%;
+  font-size: 70px;
+  color: white;
+  text-align: center; /*positions white question mark into the centre of the green circle */
+  position: fixed; /*in conjunction with 'right' and 'bottom' positiones question-marker outside of the flow of the page; no matter what - page scrolled or made narrower, it stays at the same position*/
+  right: 30px; /*puts question-marker to the R corner*/
+  bottom: 30px; /*puts question-marker some space upwards*/
+  box-shadow: 0px 0px 3px 3px grey; /* offset-x|offset-y| blur-radius|spread-radius|color */
+  cursor: pointer; /*changes cursor to pointer when hovering over*/
+}
+
+.close-button{/*in HTML in the bottom of the form - to be positioned separately*/
+  position: absolute; /* 'position: absolute' places an element relative to its parent's position and changing the layout around it; it must be enabled with 'position:relative' in parent element, i.e. here 'sign-up-form' */
+  top: 5px; /*puts 'close-button' just under the border of the form*/
+  right: 10px; /*puts 'close-button' 10px from R hand side of the form*/
+  cursor: pointer; /* makes cursor change to pointer when hovering over 'close-button x' */
+}
+/* setting the 'top', 'right', 'bottom', and 'left' properties of a relatively-positioned element will cause it to be adjusted away from its normal position; other content will not be adjusted to fit into any gap left by the element */
+/* an element with 'position: fixed' is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled; the 'top', 'right', 'bottom', and 'left' properties are used to position the element; a fixed element does not leave a gap in the page where it would normally have been located */
+/* an element with 'position: absolute;' is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like 'fixed'); however; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling; NOTE: absolute positioned elements are removed from the normal flow, and can overlap elements */

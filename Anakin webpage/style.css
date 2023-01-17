@@ -1,0 +1,133 @@
+.wrapper1{
+    width: 1400px;
+    /*box-sizing: border-box;*/
+    margin: 0 auto;
+  }
+  
+  nav{
+    background: #333; 
+  }
+  
+  .navigation{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .navigation li {
+    flex: 1 1 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 20px 0;
+  }
+  
+  nav a:hover{
+    background-color: #555;
+  }
+  
+  nav a:active{
+    color: orange;
+  }
+  
+  .header{
+    width: 1400px;
+    margin: 0 auto;
+    height: 450px;
+    background-image: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png");
+    background-position: center; /* center the image */
+    background-size: cover; /* resize the background image to cover the entire container */
+    position: relative; /* to position 'h1' absolutely */
+    font-family: 'Abril Fatface', cursive; /* typeface for h1 */
+  }
+  
+  h1{
+    font-size: 45px;
+    font-weight: 400;   /* h1 => make typeface lighter */
+    position: absolute;
+    bottom: 25px;
+    left: 285px;
+  }
+  
+  h1 strong{
+    display: block;
+    font-size: 90px;
+    font-weight: 400; /* h1 => make typeface lighter */
+    margin-top: 0;
+    line-height: 0.8;
+  }
+  
+  .container{
+    width: 900px;   /* centers all the encompassed content */
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #222;
+    font-size: 17px;
+    line-height: 1.3em;
+  }
+  
+  section{
+    width: 850px;
+    margin: 0 auto;  
+  }
+  
+  section.characteristics{
+    font-size: 22px;
+    line-height: 1.6em;
+    margin: 50px;
+  }
+  
+  h2{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  h3{
+    font-size: 25px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+  }
+  
+  h4{
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 0;
+  }
+  
+  blockquote{
+    font-family: 'Abril Fatface', cursive;
+    margin: 0;    /* cancelling default blockquote styling */
+    font-size: 55px;
+    color: white;
+    background-color: #222;
+    width: 900px;
+    padding: 50px;
+    margin: 50px 0;
+    line-height: 1.5em;
+    position: relative; /* to position 'blockquote:before' absolutely */
+  }
+  
+  blockquote:before{
+    content:"\201c";
+    display: block;
+    font-size: 150px;
+    position: absolute;
+    top: 15px;
+    left: 3px;
+  }
+  
+  hr{
+    margin: 50px 0;
+    border: 3px solid #222;
+  }
+  
+  

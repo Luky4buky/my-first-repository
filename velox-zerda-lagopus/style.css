@@ -1,0 +1,14 @@
+p{
+  color: #015668;                     /* text colour */                
+  background: #0D91A1;                /* background colour */
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid #7DCE94;
+  border-radius: 10px;                /* round border corners */
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;  /* center text horizontally within a block-level element */
+}

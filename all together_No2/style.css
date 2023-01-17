@@ -1,0 +1,50 @@
+/* all elements in flex-box container */
+
+div{
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+header, footer{
+  width: 100%;
+  height: 100px;
+  background: aqua;
+}
+
+footer{
+  background: blue; /* color change <= css cascade - overriding previous rule */
+}
+
+aside, main{
+  height: 400px;
+}
+
+aside{
+  width: 15%;
+}
+
+.left{
+  background: orange;
+}
+
+main{
+  background: red;
+  flex-grow: 4;
+  margin: 0 20px;
+  position: relative;
+}
+
+.right{
+  background: purple;
+}
+
+nav{
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

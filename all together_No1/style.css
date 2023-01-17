@@ -1,0 +1,50 @@
+/* flex-box only the centre part (main & asides) */
+
+header{
+  width: 790px;
+  height: 150px;
+  background: aqua;  /* light blue */
+  margin: 0 auto;
+}
+
+.left{
+  width: 150px;
+  height: 500px;
+  background: orange;
+}
+
+main{
+  width: 450px;
+  height: 500px;
+  background: red;
+}
+
+.right{
+  width: 150px;
+  height: 500px;
+  background: purple;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+footer{
+  width: 790px;
+  height: 150px;
+  background: blue;
+  margin: 0 auto;  
+}
+
+.fixed{
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  left: 1000px;
+  top: 590px;
+  z-index: 1;
+}
